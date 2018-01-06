@@ -10,7 +10,7 @@ class Queue:
 
     def dequeue(self):
         item = None
-        if len(self.items) > 0:
+        if not self.empty():
             item = self.items[0]
             self.items = self.items[1:]
         return item

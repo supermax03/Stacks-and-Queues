@@ -18,7 +18,7 @@ class Stack:
 
     def pop(self):
         item = None
-        if len(self.items) > 0:
+        if not self.empty():
             item = self.items[self.top]
             self.items = self.items[:self.top]
             self.top -= 1
